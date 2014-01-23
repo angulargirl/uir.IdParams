@@ -1,0 +1,10 @@
+<ul>
+    <li ng-repeat="contact in contacts">
+       <a ui-sref="contacts.detail({ id: {{contact.id}} })">
+            {{contact.name}}
+        </a>
+    </li>
+</ul>
+<!--Also works-->
+<!--<a ui-sref="contacts.detail({ id: {{contact.id}} })">-->
+<!--<a ng-href="#/contacts/0"> {{contact.name}}</a>-->
